@@ -4,41 +4,28 @@
   <meta charset="UTF-8">
   <title>東大寺 徹底解剖ガイド</title>
   <style>
-    /* 全体の設定 */
     body {
-      font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+      font-family: "Helvetica Neue", Arial, "Hiragino Mincho ProN", "MS PMincho", serif;
       line-height: 1.8;
       color: #333;
       background-color: #f4f1ea;
       margin: 0;
     }
 
-    /* ヘッダー：大仏殿の写真を背景に使用 */
     header {
-      /* 大仏殿の画像を背景に設定 */
-      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('http://googleusercontent.com/image_collection/image_retrieval/7800498654099462102_0');
+      /* 背景を安定した画像に差し替え */
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Todai-ji_Nandaimon_02.jpg/1200px-Todai-ji_Nandaimon_02.jpg');
       background-size: cover;
       background-position: center;
       color: white;
       text-align: center;
-      padding: 120px 20px;
+      padding: 100px 20px;
       text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
     }
 
-    header h1 {
-      font-size: 3.5rem;
-      margin: 0;
-      letter-spacing: 0.1em;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-    }
-
-    /* コンテンツ幅 */
     .container {
       max-width: 900px;
-      margin: -50px auto 0; /* ヘッダーに少し重ねる */
+      margin: -30px auto 0;
       padding: 40px;
       background: white;
       border-radius: 8px;
@@ -46,33 +33,22 @@
       position: relative;
     }
 
-    /* 画像のスタイル */
     img.feature-img {
       width: 100%;
       height: auto;
       border-radius: 4px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
       margin: 20px 0;
       display: block;
     }
 
-    /* セクション分け */
-    section { margin-bottom: 60px; border-bottom: 1px dashed #ccc; padding-bottom: 40px; }
-    section:last-child { border-bottom: none; }
-    
-    h2 { 
-      color: #5d2e0a; 
-      border-left: 8px solid #8b4513; 
-      padding-left: 15px; 
-      font-size: 1.8rem;
-    }
-    h3 { color: #8b4513; margin-top: 30px; border-bottom: 2px solid #eee; padding-bottom: 5px; }
+    section { margin-bottom: 50px; border-bottom: 1px dashed #ccc; padding-bottom: 30px; }
+    h2 { color: #5d2e0a; border-left: 8px solid #8b4513; padding-left: 15px; font-size: 1.8rem; }
+    h3 { color: #8b4513; margin-top: 25px; border-bottom: 2px solid #eee; }
 
-    /* カラム設定 */
-    .row { display: flex; gap: 30px; flex-wrap: wrap; }
+    .row { display: flex; gap: 30px; flex-wrap: wrap; align-items: center; }
     .col { flex: 1; min-width: 300px; }
 
-    /* 強調表示 */
     .point-box {
       background: #fff9e6;
       border: 2px solid #f1c40f;
@@ -80,9 +56,16 @@
       padding: 20px;
       margin: 20px 0;
     }
-    .point-box strong { color: #d35400; }
+    .point-box strong { color: #d35400; font-size: 1.1rem; }
 
-    footer { background: #333; color: white; text-align: center; padding: 30px; margin-top: 50px; }
+    footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+
+    /* スマホで見やすくする設定 */
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      .container { margin-top: 0; padding: 20px; }
+      .row { flex-direction: column; }
+    }
   </style>
 </head>
 <body>
@@ -93,74 +76,62 @@
   </header>
 
   <div class="container">
-    
     <section>
       <h2>はじめに：東大寺のすごさとは？</h2>
-      <p>東大寺は、奈良時代（8世紀）に聖武天皇が「生きとし生けるものすべての平和」を願って建てたお寺です。単なる観光地ではなく、今も世界中の人々が祈りを捧げる場所であり、そのスケールの大きさは他を圧倒します。</p>
+      <p>東大寺は、奈良時代に聖武天皇が「生きとし生けるものすべての平和」を願って建てたお寺です。スケールの大きさは、まさに世界級！</p>
     </section>
 
     <section>
       <h2>1. 奈良の大仏さま（盧舎那仏）</h2>
       <div class="row">
         <div class="col">
-          <p>「奈良の大仏さま」として親しまれていますが、正式には<strong>盧舎那仏（るしゃなぶつ）</strong>と言います。「知恵と慈悲の光で世界を照らす仏様」という意味です。</p>
+          <p>正式名称は<strong>盧舎那仏（るしゃなぶつ）</strong>。「世界を照らす仏様」という意味です。</p>
           <ul>
-            <li><strong>高さ：</strong> 約15メートル（ビル5階建て相当）</li>
+            <li><strong>高さ：</strong> 約15メートル</li>
             <li><strong>顔の大きさ：</strong> 約5メートル</li>
-            <li><strong>目の長さ：</strong> 約1メートル</li>
           </ul>
-          <p>近くで見上げると、その優しさと迫力に言葉を失います。</p>
         </div>
         <div class="col">
-           <img src="http://googleusercontent.com/image_collection/image_retrieval/5443361881172592257_0" class="feature-img" alt="奈良の大仏">
+           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Daibutsu_at_Todai-ji_in_Nara.jpg/800px-Daibutsu_at_Todai-ji_in_Nara.jpg" class="feature-img" alt="奈良の大仏">
         </div>
       </div>
     </section>
 
     <section>
-      <h2>2. 運慶・快慶の傑作！金剛力士像</h2>
-      <p>正門である「南大門（なんだいもん）」の両脇に立つ、筋肉隆々の守護神たちです。</p>
-      
-      <img src="http://googleusercontent.com/image_collection/image_retrieval/11745365739397125904_0" class="feature-img" alt="金剛力士像">
-
+      <h2>2. 運慶・快慶の金剛力士像</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Todai-ji_Nandaimon_Agyo.jpg/600px-Todai-ji_Nandaimon_Agyo.jpg" class="feature-img" alt="金剛力士像">
       <div class="point-box">
-        <strong>ここがテストに出るかも！？</strong>
-        <p>この巨大な像は、運慶や快慶といった天才仏師たちのチームワークにより、なんと<strong>69日間</strong>という驚異的なスピードで完成しました。口を開けた「阿形（あぎょう）」と閉じた「吽形（うんぎょう）」の呼吸はまさに「阿吽の呼吸」です。</p>
+        <strong>ここがポイント！</strong>
+        <p>なんと<strong>69日間</strong>で完成。この迫力、近くで見ると圧倒されます。</p>
       </div>
     </section>
 
     <section>
       <h2>3. 二月堂からの絶景</h2>
-      <p>大仏殿から少し坂を登ったところにある「二月堂（にがつどう）」。ここは「お水取り」という行事で有名ですが、実は隠れた絶景スポットでもあります。</p>
-      
-      <img src="http://googleusercontent.com/image_collection/image_retrieval/15579700256171394703_0" class="feature-img" alt="二月堂からの景色">
-      
-      <p>回廊からは奈良の街並みが一望でき、特に夕暮れ時はとても幻想的です。24時間参拝できるのも魅力の一つです。</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Todai-ji_Nigatsudo_2011.jpg/800px-Todai-ji_Nigatsudo_2011.jpg" class="feature-img" alt="二月堂">
+      <p>奈良の街並みが一望できる、最高のリフレッシュスポットです。</p>
     </section>
 
     <section>
-      <h2>4. 鹿とのふれあい</h2>
+      <h2>4. 奈良公園の鹿</h2>
       <div class="row">
         <div class="col">
-          <img src="http://googleusercontent.com/image_collection/image_retrieval/15384040744278820417_0" class="feature-img" alt="奈良公園の鹿">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Sika_deer_Nara_Park.jpg/800px-Sika_deer_Nara_Park.jpg" class="feature-img" alt="奈良の鹿">
         </div>
         <div class="col">
-          <h3>神様の使いとしての鹿</h3>
-          <p>東大寺のある奈良公園には、約1,200頭の野生の鹿が暮らしています。彼らは春日大社の神様の使いとして、古くから大切に守られてきました。</p>
-          <p>鹿せんべいをあげるときは、鹿がお辞儀をするかわいい姿が見られるかもしれません。ただし、野生動物なのでマナーを守って接しましょう。</p>
+          <p>神様の使いとして大切にされている鹿たち。お辞儀をする姿が有名ですね。</p>
         </div>
       </div>
     </section>
 
     <section>
       <h2>まとめ</h2>
-      <p>東大寺は、ただ大きいだけのお寺ではありません。1200年以上もの間、人々の平和への願いを受け止め続けてきた場所です。写真で見るのと、実際にその場に立って空気を感じるのとでは大違いです。ぜひ、このブログを見て興味を持ったら、実際に足を運んでみてください！</p>
+      <p>1200年続く平和への祈りを、ぜひ現地で体感してみてください！</p>
     </section>
-
   </div>
 
   <footer>
-    <p>&copy; 2026 学校発表用 東大寺紹介プロジェクト</p>
+    <p>&copy; 2026 東大寺紹介プロジェクト</p>
   </footer>
 
 </body>
